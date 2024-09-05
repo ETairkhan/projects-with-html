@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <div class="container">
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem magni dolores molestiae! Earum labore sed deleniti, provident aliquid unde suscipit, delectus soluta necessitatibus eius rem beatae autem fugit neque voluptates. Eius tempora explicabo at sunt commodi voluptatem iusto? Sint, labore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur debitis eius quaerat ullam numquam ducimus porro perferendis rerum praesentium assumenda! Voluptatibus animi minima eveniet adipisci iusto distinctio fugit rerum inventore?<span class="theme-name"></span>theme!</p>
-    
- </div>
+    <form action="https://httpbin.org/post" method="post">
+        <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name">
+        </div>
+
+        <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name">
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+        </div>
+
+        <button type="submit">      Submit</button>
+    </form>
 </body>
 </html>
