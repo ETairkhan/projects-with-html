@@ -1,9 +1,7 @@
-function setTheme() {
-    const root = document.documentElement;
-    const newTheme = root.className === 'dark' ? 'light' : 'dark';
-    root.className = newTheme;
-    
-    document.querySelector('.theme-name').textContent = newTheme;
-  }
-  
-  document.querySelector('.theme-toggle').addEventListener('click', setTheme)
+const name = document.querySelector("#username")
+const greetMeButton = document.querySelector(".greet-btn")
+const greetingOutput = document.querySelector(".greeting")
+
+greetMeButton.addEventListener('click', (event) =>{
+  greetingOutput.innerText = `Hello ${name.value}`;
+})
