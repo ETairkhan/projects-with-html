@@ -1,0 +1,110 @@
+
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color:black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+a{
+    color:white;
+    text-decoration: none;
+
+}
+a:hover{
+    color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bar{
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size:19px;
+}
+.navigation-li{
+    padding: 10px;
+    display: inline-block;
+}
+.icons-li{
+    padding: 10px;
+    display: inline-block;
+}
+.icons-img{
+    margin: 10px 10px 0px 0;
+}
+.icons{
+    margin-left: 30px;
+}
+.main{
+    position: relative;
+    width: 100%;
+}
+.anime-image{
+    position: absolute;
+    margin: 0;
+    right: 30px;
+    bottom: 0;
+}
+.backgroudn-image{
+    margin-top: 200px;
+    width: 100%;
+    display: inline-block;
+}
+.backgroudn-image-img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.name{
+  position: absolute;
+  top: 45%; 
+  left: 10%; 
+}
+.programmer{
+    position:absolute;
+    top:50%;
+    left:10%;
+    font-size: 50px;
+}
+.tools{
+    position:absolute;
+    top:60%;
+    left:10%;
+}
+.tools-li{
+    list-style-type: none;
+    padding: 0 0 10px 0 ;
+}
+@media only screen and (max-width:600px){
+    body{
+        background-color: blue;
+        
+    }
+}
+.under-development{
+    position:fixed;
+    bottom: 0px;
+    left:0px;
+    height:3.3rem;
+    font-size:3.2rem;
+    width:100%;
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    z-index:1;
+}
